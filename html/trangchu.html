@@ -1,199 +1,221 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HKT Shop - Game bản quyền</title>
     <link rel="shortcut icon" href="../img/icon.png">
     <link rel="stylesheet" type="text/css" href="../css/trangchu.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="Support">
-      <div class="header">
-        <div class="header-left">
-          <img src="../img/icon.png">
-          <span> HKT SHOP </span>
+        <div class="header">
+            <div class="header-left">
+                <img src="../img/icon.png">
+                <span> HKT SHOP </span>
+            </div>
+            <div class="header-right">
+                <input type="text" placeholder="Nhập từ khóa cần tìm..." />
+                <button type="submit">Tìm kiếm</button>
+                <input id="show" type="button" value="Đăng Nhập" />
+                <input id="dk" type="button" value="Đăng Ký" />
+            </div>
         </div>
-        <div class="header-right">
-          <input type="text" placeholder="Nhập từ khóa cần tìm..." />
-          <button type="submit">Tìm kiếm</button>
-          <input id="show" type="button" value="Đăng Nhập" />
-          <input id="dk" type="button" value="Đăng Ký" />
-        </div>
-      </div>
-      <div id="login">
-        <form>
-          <h2>ĐĂNG NHẬP</h2>
-          <label>Tên Tài Khoản</label>
-          <input type="text">
-          <label>Mật Khẩu</label>
-          <input type="password"><br>
-          <a href="#">Bạn không nhớ mật khẩu?</a><br>
-          <a id="dk2" href="#">Bạn chưa có tài khoản?<br> Click vào đây để
+        <div id="login">
+            <form>
+                <h2>ĐĂNG NHẬP</h2>
+                <label>Tên Tài Khoản</label>
+                <input type="text" id="tk">
+                <label>Mật Khẩu</label>
+                <input type="password" id="mk"><br>
+                <a href="#">Bạn không nhớ mật khẩu?</a><br>
+                <a id="dk2" href="#">Bạn chưa có tài khoản?<br> Click vào đây để
             đăng
             ký</a>
-          <button id="submit" type="submit">Đăng Nhập</button>
-          <input id="huy" type="button" value="Huỷ" />
-          <button id="X">X</button>
-        </form>
-      </div>
-      <div id="regsiter">
-        <form>
-          <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
-          <label>Tên Tài Khoản</label>
-          <input type="text">
-          <label>Tên Người Dùng</label>
-          <input type="text">
-          <label>Địa Chỉ Gmail</label>
-          <input type="email">
-          <label>Mật Khẩu</label>
-          <input type="password" placeholder="Mật khẩu ít nhất 8 ký tự">
-          <button id="submit" type="submit">Đăng Ký</button>
-          <input id="out" type="button" value="Về Trang Đăng Nhập" />
-          <button id="X2">X</button>
-        </form>
-      </div>
+                <button id="dang-nhap" type="submit">Đăng Nhập</button>
+                <input id="huy" type="button" value="Huỷ" />
+                <button id="X">X</button>
+            </form>
+        </div>
+        <div id="regsiter">
+            <form>
+                <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+                <label>Tên Tài Khoản</label>
+                <input type="text">
+                <label>Tên Người Dùng</label>
+                <input type="text">
+                <label>Địa Chỉ Gmail</label>
+                <input type="email">
+                <label>Mật Khẩu</label>
+                <input type="password" placeholder="Mật khẩu ít nhất 8 ký tự">
+                <button id="submit" type="submit">Đăng Ký</button>
+                <input id="out" type="button" value="Về Trang Đăng Nhập" />
+                <button id="X2">X</button>
+            </form>
+        </div>
     </div>
     <div class="khung">
-      <div id="menu-ngang">
-        <ul>
-          <li><a href="#">Danh mục sản phẩm</a></li>
-          <li>
-            <a href="#">Thể loại game</a>
-            <ul class="menu-game">
-              <li><a href="#">Hành động</a></li>
-              <li><a href="#">Đua xe</a></li>
-              <li><a href="#">Trí tuệ</a></li>
-              <li><a href="#">Thể thao</a></li>
-              <li><a href="#">Thế giới mở</a></li>
+        <div id="menu-ngang">
+            <ul>
+                <li><a href="#">Danh mục sản phẩm</a></li>
+                <li>
+                    <a href="#">Thể loại game</a>
+                    <ul class="menu-game">
+                        <li><a href="#">Hành động</a></li>
+                        <li><a href="#">Đua xe</a></li>
+                        <li><a href="#">Trí tuệ</a></li>
+                        <li><a href="#">Thể thao</a></li>
+                        <li><a href="#">Thế giới mở</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Hướng dẫn nhận game</a>
+                    <ul class="menu-game">
+                        <li><a href="#">Nhận game bằng Key</a></li>
+                        <li><a href="#">Nhận qua quà tặng bạn bè</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/baohanh.html">Chính sách bảo hành</a></li>
+                <li>
+                    <a href="giohang.html">Giỏ hàng</a>
+                    <ul class="menu-game">
+                        <li><a href="#">Kiểm tra tài khoản</a></li>
+                        <li><a href="../html/naptien.html">Nạp thêm tiền</a></li>
+                    </ul>
+                </li>
             </ul>
-          </li>
-          <li>
-            <a href="#">Hướng dẫn nhận game</a>
-            <ul class="menu-game">
-              <li><a href="#">Nhận game bằng Key</a></li>
-              <li><a href="#">Nhận qua quà tặng bạn bè</a></li>
+        </div>
+        <div class="main-news">
+            <img src="../img/banner1b.jpg">
+            <img src="../img/banner2.jpg">
+            <img src="../img/banner3.jpg">
+            <img src="../img/banner4.jpg">
+            <span>Black friday sale 50%</span>
+            <span> Từ ngày 23-29 tháng 11</span>
+            <span> HKT SHOP</span>
+        </div>
+        <div id="menu-doc">
+            <ul>
+                <li><a href="#">Game trên Steam</a></li>
+                <li><a href="#">PUBG</a></li>
+                <li><a href="#">Game trên Origin</a></li>
+                <li><a href="#">Game trên Battle.net</a></li>
+                <li><a href="#">Steam Wallet</a></li>
+                <li><a href="#">Gói nạp Garena</a></li>
+                <li><a href="#">CD key</a></li>
+                <li><a href="#">Spotify</a></li>
             </ul>
-          </li>
-          <li><a href="../html/baohanh.html">Chính sách bảo hành</a></li>
-          <li>
-            <a href="giohang.html">Giỏ hàng</a>
-            <ul class="menu-game">
-              <li><a href="#">Kiểm tra tài khoản</a></li>
-              <li><a href="../html/naptien.html">Nạp thêm tiền</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="main-news">
-        <img src="../img/banner1b.jpg">
-        <img src="../img/banner2.jpg">
-        <img src="../img/banner3.jpg">
-        <img src="../img/banner4.jpg">
-        <span>Black friday sale 50%</span>
-        <span> Từ ngày 23-29 tháng 11</span>
-        <span> HKT SHOP</span>
-      </div>
-      <div id="menu-doc">
-        <ul>
-          <li><a href="#">Game trên Steam</a></li>
-          <li><a href="#">PUBG</a></li>
-          <li><a href="#">Game trên Origin</a></li>
-          <li><a href="#">Game trên Battle.net</a></li>
-          <li><a href="#">Steam Wallet</a></li>
-          <li><a href="#">Gói nạp Garena</a></li>
-          <li><a href="#">CD key</a></li>
-          <li><a href="#">Spotify</a></li>
-        </ul>
-      </div>
+        </div>
     </div>
     <div class="SPnoibat">
-      <ul>
-        <h1>Sản phẩm nổi bật</h1>
-      </ul>
-      <form action="#" method="get">
-        <img src="../img/spnoibat1.jpg"><br>
-        <span>ASSASSIN'S CREED ODYSSEY - GOLD EDITION</span><br>
-        <span>653,000đ</span><br>
-        <input type="button" value="Mua ngay">
-      </form>
-      <form action="#" method="get">
-        <img src="../img/spnoibat2.jpg"><br>
-        <span>Stardew Valley</span><br>
-        <span>147.000đ</span><br><br>
-        <input type="button" value="Mua ngay">
-      </form>
-      <form action="#" method="get">
-        <img src="../img/spnoibat3.jpg"><br>
-        <span>Fifa 20</span><br>
-        <span>1.400.000đ</span><br><br>
-        <input type="button" value="Mua ngay">
-      </form>
-      <form action="#" method="get">
-        <img src="../img/spnoibat4.jpg"><br>
-        <span>RISE OF THE TOMB RAIDER: 20 YEAR CELEBRATION</span><br>
-        <span>180.000đ</span><br>
-        <input type="button" value="Mua ngay">
-      </form>
-      <div class="SPgiamgia">
         <ul>
-          <h1>Sản phẩm khuyến mãi</h1>
+            <h1>Sản phẩm nổi bật</h1>
         </ul>
         <form action="#" method="get">
-          <img src="../img/giamgia1.jpg"><br>
-          <span>VICTORIA II: INTERWAR PLANES SPRITE PACK</span><br>
-          <span class="old">̶2̶̶9̶̶0̶̶0̶̶0̶̶đ̶ </span>
-          <span class="new"> ➔ 14,000đ</span><br>
-          <input type="button" value="Mua ngay">
+            <img src="../img/spnoibat1.jpg"><br>
+            <span>ASSASSIN'S CREED ODYSSEY - GOLD EDITION</span><br>
+            <span>653,000đ</span><br>
+            <input type="button" value="Mua ngay">
         </form>
         <form action="#" method="get">
-          <img src="../img/giamgia2.jpg"><br>
-          <span>FAR CRY 5 - STANDARD EDITION</span><br>
-          <span class="old">̶8̶̶9̶̶0̶̶0̶̶0̶̶0̶̶đ̶</span>
-          <span class="new"> ➔ 147.000đ</span><br>
-          <input type="button" value="Mua ngay">
+            <img src="../img/spnoibat2.jpg"><br>
+            <span>Stardew Valley</span><br>
+            <span>147.000đ</span><br><br>
+            <input type="button" value="Mua ngay">
         </form>
         <form action="#" method="get">
-          <img src="../img/giamgia3.jpg"><br>
-          <span>Black Desert</span><br>
-          <span class="old">̶5̶̶9̶̶0̶̶0̶̶0̶̶0̶̶đ̶</span>
-          <span class="new"> ➔ 400.000đ</span><br><br>
-          <input type="button" value="Mua ngay">
+            <img src="../img/spnoibat3.jpg"><br>
+            <span>Fifa 20</span><br>
+            <span>1.400.000đ</span><br><br>
+            <input type="button" value="Mua ngay">
         </form>
         <form action="#" method="get">
-          <img src="../img/giamgia4.jpg"><br>
-          <span>PUBG</span><br>
-          <span class="old">2̶̶9̶̶0̶̶0̶̶0̶̶0̶̶đ̶</span>
-          <span class="new"> ➔ 180.000đ</span><br><br>
-          <input type="button" value="Mua ngay">
+            <img src="../img/spnoibat4.jpg"><br>
+            <span>RISE OF THE TOMB RAIDER: 20 YEAR CELEBRATION</span><br>
+            <span>180.000đ</span><br>
+            <input type="button" value="Mua ngay">
         </form>
-      </div>
-      <script language="javascript">
-      document.getElementById("huy").onclick = function () {
+        <div class="SPgiamgia">
+            <ul>
+                <h1>Sản phẩm khuyến mãi</h1>
+            </ul>
+            <form action="#" method="get">
+                <img src="../img/giamgia1.jpg"><br>
+                <span>VICTORIA II: INTERWAR PLANES SPRITE PACK</span><br>
+                <span class="old">̶2̶̶9̶̶0̶̶0̶̶0̶̶đ̶ </span>
+                <span class="new"> ➔ 14,000đ</span><br>
+                <input type="button" value="Mua ngay">
+            </form>
+            <form action="#" method="get">
+                <img src="../img/giamgia2.jpg"><br>
+                <span>FAR CRY 5 - STANDARD EDITION</span><br>
+                <span class="old">̶8̶̶9̶̶0̶̶0̶̶0̶̶0̶̶đ̶</span>
+                <span class="new"> ➔ 147.000đ</span><br>
+                <input type="button" value="Mua ngay">
+            </form>
+            <form action="#" method="get">
+                <img src="../img/giamgia3.jpg"><br>
+                <span>Black Desert</span><br>
+                <span class="old">̶5̶̶9̶̶0̶̶0̶̶0̶̶0̶̶đ̶</span>
+                <span class="new"> ➔ 400.000đ</span><br><br>
+                <input type="button" value="Mua ngay">
+            </form>
+            <form action="#" method="get">
+                <img src="../img/giamgia4.jpg"><br>
+                <span>PUBG</span><br>
+                <span class="old">2̶̶9̶̶0̶̶0̶̶0̶̶0̶̶đ̶</span>
+                <span class="new"> ➔ 180.000đ</span><br><br>
+                <input type="button" value="Mua ngay">
+            </form>
+        </div>
+        <script language="javascript">
+            document.getElementById("dang-nhap").onclick = function() {
+                var data = [{
+                    tk: "trung",
+                    mk: "trung123"
+                }, {
+                    tk: "khoa",
+                    mk: "khoa123"
+                }];
+                var tk = document.getElementById("tk").value;
+                var mk = document.getElementById("mk").value;
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].tk == tk && data[i].mk == mk) {
+                        alert("true");
+                        return;
+                    }
+                }
+                alert("false");
+                return;
+            }
+            document.getElementById("huy").onclick = function() {
                 document.getElementById("login").style.display = 'none';
             };
-      document.getElementById("X").onclick = function () {
+            document.getElementById("X").onclick = function() {
                 document.getElementById("login").style.display = 'none';
             };
-      document.getElementById("X2").onclick = function () {
+            document.getElementById("X2").onclick = function() {
                 document.getElementById("regsiter").style.display = 'none';
             };
 
-      document.getElementById("show").onclick = function () {
+            document.getElementById("show").onclick = function() {
                 document.getElementById("login").style.display = 'block';
             };
 
-      document.getElementById("out").onclick = function () {
+            document.getElementById("out").onclick = function() {
                 document.getElementById("regsiter").style.display = 'none';
                 document.getElementById("login").style.display = 'block';
             };
 
-      document.getElementById("dk").onclick = function () {
+            document.getElementById("dk").onclick = function() {
                 document.getElementById("regsiter").style.display = 'block';
             };
-      document.getElementById("dk2").onclick = function () {
+            document.getElementById("dk2").onclick = function() {
                 document.getElementById("login").style.display = 'none';
                 document.getElementById("regsiter").style.display = 'block';
             };
-    </script>
-    </body>
-  </html>
+        </script>
+</body>
+
+</html>
